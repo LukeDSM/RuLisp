@@ -1,6 +1,6 @@
 (defpackage #:rulisp
   (:use #:cl)
-  (:nicknames #:рулисп)
+  (:nicknames #:rl #:рулисп #:рл)
   (:export
    ;; Macros
    #:макрос
@@ -14,3 +14,7 @@
    #:константа
    #:пока
    #:для))
+
+(defpackage #:rl-user
+  (:use #:rulisp)
+  (:nicknames #:rulisp-user #:рулисп-юзер #:рл-юзер))
